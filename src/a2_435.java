@@ -23,9 +23,10 @@ public class a2_435
 		String [][] missing01 = new String[8796][14];
 		String [][] missing10 = new String[8796][14];
 		readInFile(complete, "dataset_complete.csv");
-		readInFile(missing01, "dataset_missing01.csv");
+		readInFile(missing01, "Sample.csv");
 		System.out.println(missing01.length);
-		//String [][] hotMean01 = hotDeckImp(missing01);
+		//String [][] hotMe
+		an01 = hotDeckImp(missing01);
 		///exportCSV(hotMean01, "HELLOO.csv");
 		readInFile(missing10, "dataset_missing10.csv");
 		String [][] mean01 = meanImp(missing01);
@@ -207,6 +208,9 @@ public class a2_435
 					double sumDiff = 0;
 						for(int col2 = 0; col2<13; col2++)
 						{
+							//System.out.println(row1 + "," + col1 + "   COLII   " + row2 + "," +col2);
+							//System.out.println(matrix[row2][col2]);
+							//System.out.println(matrix[row1][col1].equals("?"));
 							if (row1 == row2)
 							{
 								sumDiff = 0;
